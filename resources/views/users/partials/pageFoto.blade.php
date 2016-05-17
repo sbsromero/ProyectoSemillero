@@ -8,7 +8,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="http://placehold.it/1200x400?text=IMAGE" alt="Image">
+      <img src="{{asset('/imagenes/emisora.png')}}" alt="Image">
       <div class="carousel-caption">
         ...
       </div>
