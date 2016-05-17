@@ -13,17 +13,17 @@
       </div>
     </div>
     <div class="item">
-      <img src="{{asset('/imagenes/vistaniños.jpg')}}}" alt="Image">
+      <img src="{{asset('/imagenes/vistaniños.jpg')}}" alt="Image">
       <div class="carousel-caption">
       </div>
     </div>
     <div class="item">
-      <img src="{{asset('/imagenes/auditorio.jpg')}}}" alt="Image">
+      <img src="{{asset('/imagenes/auditorio.jpg')}}" alt="Image">
       <div class="carousel-caption">
       </div>
     </div>
     <div class="item">
-      <img src="{{asset('/imagenes/laboratorio.jpg')}}}" alt="Image">
+      <img src="{{asset('/imagenes/laboratorio.jpg')}}" alt="Image">
       <div class="carousel-caption">
       </div>
     </div>
