@@ -19,7 +19,7 @@ class AdminController extends Controller
         //paginamos de ha 3 administradores a la vez en la vista
         $admins = Admin::orderBy('id','ASC')->paginate(3);
         //Retornamos la variable junto a sus datos a una vista (vista llamada 'areas')
-        return view('admin.administradoress.index')->with('administradores', $admins);
+        return view('admin.administradores.index')->with('administradores', $admins);
 
     }
 
