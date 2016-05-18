@@ -17,7 +17,7 @@
 {!! Form::open(['route' => 'admin.semillas.store', 'method' => 'POST']) !!}
     <div class = "form-group">
     	{!! form::label('fecha','Fecha de diligenciamiento de este formulario')!!}
-    	{!! form::date('calendario-fecha',\Carbon\Carbon::now(), ['class' => 'form-control', 'required', 'enable'])!!}
+    	{!! form::date('calendario-fecha',\Carbon\Carbon::now(), ['class' => 'form-control', 'required'])!!}
     </div>
     <div class ="form-group">
     	{!! form::label('nombre', 'Nombres del aspirante' )!!}
