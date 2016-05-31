@@ -18,6 +18,9 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' =>'inicio'],function(){
+	Route::get('semillas-preescolar',function(){
+		return view('users.inicio.semillas-preescolar');
+	});
 	Route::get('semillas-primaria',function(){
 		return view('users.inicio.semillas-primaria');
 	});
@@ -114,4 +117,16 @@ Route::group(['prefix'=>'formularios-y-datos-semillero'],function(){
 		return view('users.formulario-inscripcion');
 	});
 	Route::post('/store',['uses'=>'SemillasController@guardarSemilla', 'as'=>'store']);
+});
+
+Route::group(['prefix' => 'equipo-humano-2016'], function(){
+	Route::get('/',function(){
+		return view('users.equipoHumano.equipoHumano');
+	});
+});
+
+Route::group(['prefix' => 'contactos'], function(){
+	Route::get('/',function(){
+		return view('users.contactos.contactos');
+	});
 });

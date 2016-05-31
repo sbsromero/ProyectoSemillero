@@ -92,10 +92,23 @@ class AdminController extends Controller
     {
         $admin = new Admin($request->all());
         $admin ->password = bcrypt($request->password);
-        $admin ->save();
-
-        Flash::success("Se ha registrado el area " . $admin->name . " de forma exitosa!!!");
-        return redirect()->route('admin.administradores.index');
+        $bandera =false;
+        $administradores = Admin::All();
+        foreach ($administradores as $administrador) {
+            if($administrador->email == $admin->email){
+                $bandera = true;
+                break;
+            }
+        }
+        if($bandera){
+            Flash::error("El usuario " . $admin->name . " ya se encuentra registrado");
+            return redirect()->route('admin.administradores.create');
+        }
+        else{
+            $admin ->save();
+            Flash::success("Se ha registrado el administrador " . $admin->name . " de forma exitosa!!!");
+            return redirect()->route('admin.administradores.index');
+        }
     }
 
     /*
