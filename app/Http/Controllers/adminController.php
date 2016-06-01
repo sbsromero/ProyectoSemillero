@@ -88,7 +88,7 @@ class AdminController extends Controller
     *Trae todos los datos necesarios en formato json para crear un 
     *administrador y guardarlo en la base de datos
     */
-    public function store(AdminRequest $request)
+    public function store(Request $request)
     {
         $admin = new Admin($request->all());
         $admin ->password = bcrypt($request->password);
