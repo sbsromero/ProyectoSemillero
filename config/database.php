@@ -71,7 +71,7 @@ return [
             'strict' => false,
             'engine' => null,
         ],*/
-
+        
         'mysql' => array(
             'driver'    => 'mysql',
             'host'      => $host,
@@ -82,6 +82,7 @@ return [
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
         ),
+        
 
         'pgsql' => [
             'driver' => 'pgsql',
