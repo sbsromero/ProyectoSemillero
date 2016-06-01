@@ -24,8 +24,8 @@ class AdministradorRequest extends Request
     public function rules()
     {
         return [
-            'name' => 'min:4|max:25|required',
-            'email' => 'min:4|max:20|required',
+            'name' => 'min:5|max:25|required',
+            'email' => 'min:5|max:20|email|required',
             'password' => 'min:5|max:20|required'
         ];
     }
