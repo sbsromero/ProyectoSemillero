@@ -25,7 +25,7 @@ class AdministradorRequest extends Request
     {
         return [
             'name' => 'min:5|max:25|required',
-            'email' => 'min:5|max:20|email|required',
+            'email' => 'min:5|max:50|email|required',
             'password' => 'min:5|max:20|required'
         ];
     }
